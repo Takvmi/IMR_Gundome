@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\TTanase\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\TTanase\.Rider2019.1\system\resharper-host\Local\Transient\ReSharperHost\v191\SolutionCaches\_Gundome_HW.-711067528.00" t="ExcludeRecursive" />
-    <e p="E:\UniAgain\IMR\Gundome_HW\Gundome_HW" t="IncludeRecursive">
+    <e p="C:\Users\TTanase\.Rider2019.1\system\resharper-host\Local\Transient\ReSharperHost\v191\SolutionCaches\_Gundome_HW.-577825485.00" t="ExcludeRecursive" />
+    <e p="E:\UniAgain\IMR\IMR_Gundome\Gundome_HW" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -11,6 +11,10 @@
           <e p="SimpleCameraController.cs" t="Include" />
         </e>
         <e p="Test" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Hand.cs" t="Include" />
+            <e p="HandController.cs" t="Include" />
+          </e>
           <e p="testScript.cs" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
