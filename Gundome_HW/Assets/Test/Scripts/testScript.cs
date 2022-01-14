@@ -77,7 +77,7 @@ public class testScript : MonoBehaviour
             hasShot = true;
             ShootingEffect.Play();
             var obj = (GameObject)Instantiate(TheBullet, FirePoint.position, MechaGun.gameObject.transform.localRotation);
-            obj.GetComponent<Rigidbody>().AddForce(FirePoint.forward * 6, ForceMode.Impulse);
+            obj.GetComponent<Rigidbody>().AddForce(FirePoint.forward * 1, ForceMode.Impulse);
 
             
         }

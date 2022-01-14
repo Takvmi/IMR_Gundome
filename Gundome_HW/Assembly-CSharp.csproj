@@ -46,10 +46,13 @@
      <Compile Include="Assets\Test\Scripts\quitButtonScript.cs" />
      <Compile Include="Assets\Test\Scripts\startButtonScript.cs" />
      <Compile Include="Assets\Test\Scripts\BetterGrab.cs" />
+     <Compile Include="Assets\Test\Scripts\bulletScript.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Test\Scripts\HandController.cs" />
      <Compile Include="Assets\Test\Scripts\Hand.cs" />
-     <Compile Include="Assets\Test\Scripts\bulletScript.cs" />
+     <Compile Include="Assets\Test\Scripts\gameManagerScript.cs" />
+     <Compile Include="Assets\Test\Scripts\hitScript.cs" />
+     <Compile Include="Assets\Test\Scripts\startRoomScript.cs" />
      <Reference Include="UnityEngine">
      <HintPath>E:/New Unity Installs/2021.1.4/Unity 2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>

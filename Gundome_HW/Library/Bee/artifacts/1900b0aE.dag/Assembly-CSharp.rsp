@@ -349,10 +349,13 @@
 "Assets/Scripts/SimpleCameraController.cs"
 "Assets/Test/Scripts/BetterGrab.cs"
 "Assets/Test/Scripts/bulletScript.cs"
+"Assets/Test/Scripts/gameManagerScript.cs"
 "Assets/Test/Scripts/Hand.cs"
 "Assets/Test/Scripts/HandController.cs"
+"Assets/Test/Scripts/hitScript.cs"
 "Assets/Test/Scripts/quitButtonScript.cs"
 "Assets/Test/Scripts/startButtonScript.cs"
+"Assets/Test/Scripts/startRoomScript.cs"
 "Assets/Test/Scripts/testScript.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:8.0
