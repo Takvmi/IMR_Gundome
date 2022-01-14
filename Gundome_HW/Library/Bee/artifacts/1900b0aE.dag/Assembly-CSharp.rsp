@@ -348,6 +348,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/SimpleCameraController.cs"
 "Assets/Test/Scripts/BetterGrab.cs"
+"Assets/Test/Scripts/bulletScript.cs"
 "Assets/Test/Scripts/Hand.cs"
 "Assets/Test/Scripts/HandController.cs"
 "Assets/Test/Scripts/quitButtonScript.cs"

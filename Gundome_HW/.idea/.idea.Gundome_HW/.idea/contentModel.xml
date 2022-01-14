@@ -13,6 +13,7 @@
         <e p="Test" t="Include">
           <e p="Scripts" t="Include">
             <e p="BetterGrab.cs" t="Include" />
+            <e p="bulletScript.cs" t="Include" />
             <e p="Hand.cs" t="Include" />
             <e p="HandController.cs" t="Include" />
             <e p="quitButtonScript.cs" t="Include" />
