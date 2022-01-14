@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -5,11 +6,17 @@ public class BetterGrab : XRGrabInteractable
 {
     private Vector3 initialAttachLocalPos;
     private Quaternion initialAttachLocalRot;
+    private bool isHeld;
 
     public GameObject fakeHand;
-    
-    void Start() 
+    public GameObject glowPads;
+
+    public Transform originPosition;
+    public Rigidbody ownRigidbody;
+
+    void Start()
     {
+        isHeld = false;
         if (!attachTransform)
         {
             GameObject grab = new GameObject("Grab Pivot");
@@ -17,8 +24,17 @@ public class BetterGrab : XRGrabInteractable
             attachTransform = grab.transform;
         }
 
+        GetComponent<Rigidbody>().isKinematic = false;
         initialAttachLocalPos = attachTransform.localPosition;
         initialAttachLocalRot = attachTransform.localRotation;
+    }
+
+    private void Update()
+    {
+        if (isHeld) return;
+        transform.position = originPosition.position;
+        transform.rotation = originPosition.rotation;
+
     }
 
     protected override void OnSelectEntering(XRBaseInteractor interactor)
@@ -28,6 +44,8 @@ public class BetterGrab : XRGrabInteractable
             attachTransform.position = interactor.transform.position;
             attachTransform.rotation = interactor.transform.rotation;
             GetComponent<MeshRenderer>().enabled = false;
+            isHeld = true;
+            glowPads.SetActive(false);
             fakeHand.SetActive(true);
         }
         else
@@ -45,6 +63,8 @@ public class BetterGrab : XRGrabInteractable
             attachTransform.position = interactor.transform.position;
             attachTransform.rotation = interactor.transform.rotation;
             GetComponent<MeshRenderer>().enabled = true;
+            isHeld = false;
+            glowPads.SetActive(true);
             fakeHand.SetActive(false);
         }
         else
@@ -52,6 +72,8 @@ public class BetterGrab : XRGrabInteractable
             attachTransform.localPosition = initialAttachLocalPos;
             attachTransform.localRotation = initialAttachLocalRot;
         }
+        transform.position = originPosition.position;
+        transform.rotation = originPosition.rotation;
         base.OnSelectExiting(interactor);
     }
 }

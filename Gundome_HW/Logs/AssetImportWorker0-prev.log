@@ -15,11 +15,11 @@ E:/UniAgain/IMR/IMR_Gundome/Gundome_HW
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62489
+62532
 Successfully changed project path to: E:/UniAgain/IMR/IMR_Gundome/Gundome_HW
 E:/UniAgain/IMR/IMR_Gundome/Gundome_HW
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 114.92 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 115.93 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.4f1 (4cd64a618c1b)
 [Subsystems] Discovering subsystems at path E:/New Unity Installs/2021.1.4/Unity 2021.1.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,61 +35,61 @@ Initialize mono
 Mono path[0] = 'E:/New Unity Installs/2021.1.4/Unity 2021.1.4f1/Editor/Data/Managed'
 Mono path[1] = 'E:/New Unity Installs/2021.1.4/Unity 2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/New Unity Installs/2021.1.4/Unity 2021.1.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/New Unity Installs/2021.1.4/Unity 2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001073 seconds.
+Registered in 0.001074 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 113.50 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 115.41 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.975 seconds
+- Completed reload, in  1.023 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004497 seconds.
+Registered in 0.004716 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 115.59 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 116.78 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.219 seconds
+- Completed reload, in  1.254 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4602 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.3 MB.
-System memory in use after: 186.4 MB.
+System memory in use before: 189.6 MB.
+System memory in use after: 186.6 MB.
 
 Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 5031.
-Total: 3.811100 ms (FindLiveObjects: 0.297300 ms CreateObjectMapping: 0.207200 ms MarkObjects: 2.224100 ms  DeleteObjects: 1.081600 ms)
+Total: 4.115000 ms (FindLiveObjects: 0.361200 ms CreateObjectMapping: 0.271300 ms MarkObjects: 2.359200 ms  DeleteObjects: 1.122100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Test/Materials/Textures/Asteroid/n.png
-  artifactKey: Guid(81b3e4d89ba70de4d8b8a832c7c93e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test/Materials/Textures/Asteroid/n.png using Guid(81b3e4d89ba70de4d8b8a832c7c93e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b328c3dba3d214c9d42effd67fe6ec') in 0.098786 seconds 
+  path: Assets/Test/Materials/Textures/Asteroid/d.jpg
+  artifactKey: Guid(ae5441c1fa5a5284293176c0c41a078e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Materials/Textures/Asteroid/d.jpg using Guid(ae5441c1fa5a5284293176c0c41a078e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9156e2520af74dff949d3bd192a3ff62') in 0.099833 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Test/Materials/Textures/Asteroid/d.png
-  artifactKey: Guid(4b0559d4fd9c5e843863dd42a0dbef4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test/Materials/Textures/Asteroid/d.png using Guid(4b0559d4fd9c5e843863dd42a0dbef4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c49cce593172aebc7c15404661bb55') in 0.021770 seconds 
+  Time since last request: 0.000303 seconds.
+  path: Assets/Test/Materials/Textures/Asteroid/n.jpg
+  artifactKey: Guid(34a5d61c9bb814242a6e47dca09194bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Materials/Textures/Asteroid/n.jpg using Guid(34a5d61c9bb814242a6e47dca09194bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e52d04c46335a66d0fe253045101c941') in 0.025728 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 36.228511 seconds.
+  Time since last request: 10.288830 seconds.
   path: Assets/Test/Rocks/Asteroid.mat
   artifactKey: Guid(b436d8ead4388f04388adad38b7e0f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test/Rocks/Asteroid.mat using Guid(b436d8ead4388f04388adad38b7e0f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6608a97d861245950c06a11b46bc8725') in 0.174833 seconds 
+Start importing Assets/Test/Rocks/Asteroid.mat using Guid(b436d8ead4388f04388adad38b7e0f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e238b8700ff86435386f508dca4e05') in 0.177158 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.501837 seconds.
-  path: Assets/Scenes/StartScene/ReflectionProbe-0.exr
-  artifactKey: Guid(817bc29c83dd6c44f9dc21c9c77593c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/StartScene/ReflectionProbe-0.exr using Guid(817bc29c83dd6c44f9dc21c9c77593c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae288573114798f2c96efafa74b76c2') in 0.043029 seconds 
+  Time since last request: 43.920029 seconds.
+  path: Assets/Test/Rocks/Asteroid.mat
+  artifactKey: Guid(b436d8ead4388f04388adad38b7e0f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Rocks/Asteroid.mat using Guid(b436d8ead4388f04388adad38b7e0f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4fa4e9097bb2f508fd7623a7c2a32b9') in 0.051417 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

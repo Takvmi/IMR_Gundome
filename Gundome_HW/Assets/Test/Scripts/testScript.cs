@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
 using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class testScript : MonoBehaviour
 {
@@ -10,24 +10,39 @@ public class testScript : MonoBehaviour
     public GameObject PlayerMecha;
 
     public float FlySpeed;
+    public float RotationSpeed;
 
-    public GameObject RightHandController;
-    // Start is called before the first frame update
+    public Transform leftHandle;
+    public Transform rightHandle;
+
+    private Vector3 direction;
+    private Rigidbody mechaBody;
+
     void Start()
     {
+        mechaBody = PlayerMecha.gameObject.GetComponent<Rigidbody>();
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
+        
+        if(rightHandle.transform.rotation.z >= 0.2) SlideBackwards();
+        else if(rightHandle.transform.rotation.z <= -0.2) SlideForwards();
+        
+        if(rightHandle.transform.rotation.x >= 0.2) RotateLeft();
+        else if(rightHandle.transform.rotation.x <= -0.2) RotateRight();
+        
+        if(leftHandle.transform.rotation.x >= 0.2) RotateForwards();
+        else if(leftHandle.transform.rotation.x <= -0.2) RotateBackwards();
+
         List<InputDevice> handDevices = new List<InputDevice>();
         InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Right, handDevices);
         if (handDevices.Count == 1)
         {
             CheckController(handDevices[0]);
         }
-        else Debug.Log("NO HANDS!");
     }
 
     private void CheckController(InputDevice d)
@@ -37,19 +52,59 @@ public class testScript : MonoBehaviour
         Vector2 JoystickAxis;
         d.TryGetFeatureValue(CommonUsages.primaryButton, out primaryButtonDown);
         d.TryGetFeatureValue(CommonUsages.secondaryButton, out secondaryButtonDown);
-        if(primaryButtonDown) MoveForward();
-        if(secondaryButtonDown) MoveBackwards();
+        if(primaryButtonDown) SlideBackwards();
+        if(secondaryButtonDown) SlideBackwards();
 
         d.TryGetFeatureValue(CommonUsages.secondary2DAxis, out JoystickAxis);
-        if(JoystickAxis.x > 0.1) MoveForward();
-        else if(JoystickAxis.x < -0.1) MoveBackwards();
+        if(JoystickAxis.x > 0.1) SlideBackwards();
+        else if(JoystickAxis.x < -0.1) SlideBackwards();
     }
 
-    public void MoveForward() => PlayerMecha.gameObject.transform.position = new Vector3(
-        PlayerMecha.gameObject.transform.position.x + FlySpeed, PlayerMecha.gameObject.transform.position.y,
-        PlayerMecha.gameObject.transform.position.z);
+    public void SlideForwards()
+    {
+        var localVelocity = PlayerMecha.transform.InverseTransformDirection(mechaBody.velocity);
+        localVelocity.x = FlySpeed;
+        mechaBody.velocity = PlayerMecha.transform.TransformDirection(localVelocity);
+    }
     
-    public void MoveBackwards() => PlayerMecha.gameObject.transform.position = new Vector3(
-        PlayerMecha.gameObject.transform.position.x - FlySpeed, PlayerMecha.gameObject.transform.position.y,
-        PlayerMecha.gameObject.transform.position.z);
+    public void SlideBackwards()
+    {
+        var localVelocity = PlayerMecha.transform.InverseTransformDirection(mechaBody.velocity);
+        localVelocity.x = -FlySpeed;
+        mechaBody.velocity = PlayerMecha.transform.TransformDirection(localVelocity);
+    }
+
+    public void SlideLeft()
+    {
+        
+    }
+
+    public void SlideRight()
+    {
+        
+    }
+
+    public void RotateLeft()
+    {
+        var addRotation = new Vector3(1,0,0);
+    }
+
+    public void RotateRight()
+    {
+        var addRotation = new Vector3(-1,0,0);
+        PlayerMecha.gameObject.transform.Rotate(addRotation);
+    }
+
+    public void RotateForwards()
+    {
+        var addRotation = new Vector3(0,0,1);
+        PlayerMecha.gameObject.transform.Rotate(addRotation);
+    }
+    
+    public void RotateBackwards()
+    {
+        var addRotation = new Vector3(0,0,-1);
+        PlayerMecha.gameObject.transform.Rotate(addRotation);
+    }
+
 }
