@@ -6,3 +6,7 @@ Arcade game inspired by the popular japanese Gundam intellectual property.
 
 ### Tema 5
 [Components, Scenes and Resources](https://docs.google.com/document/d/1H4RvJ5H_m7CwtaQGiVvil794pP7ix49RyG9c9lwXxLg/edit?usp=sharing)
+
+### Link to Final Build
+
+[Final Build](https://drive.google.com/file/d/1U_bALdYrw6HMbpl08cNPoQayYrLTZRAr/view?usp=sharing)
